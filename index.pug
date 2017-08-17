@@ -1,0 +1,9 @@
+- var data = [{url: "http://i65.tinypic.com/ogyssm.jpg",genre:"Drama",label:"Moonlight Movie Poster"},{url:"http://i65.tinypic.com/j626ow.jpg",genre:"Action, Drama, Sci Fi",label:"Logan Movie Poster"}]
+
+ul
+	for object in data
+		li
+			img(src=object.url alt=object.label)
+			div.info
+				p=object.genre
+				div.button
